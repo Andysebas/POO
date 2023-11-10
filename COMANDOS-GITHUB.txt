@@ -1,3 +1,9 @@
+                                     UNIVERSIDAD DE LAS FUERZAS ARMADAS
+NOMBRE: Andrés Guerrero 
+NRC:13930
+INGENIERO: Luis Jaramillo
+GIT-GITHUB
+
 Git:
 
 1. git init: Inicia un nuevo repositorio Git.
@@ -21,3 +27,20 @@ GitHub:
 6. git fetch: Obtiene cambios del repositorio remoto sin fusionarlos.
 7. git branch -d: Elimina una rama local después de fusionar los cambios.
 8. git remote add: Conecta tu repositorio local a un repositorio remoto.
+
+Lista un estado actual del repositorio con lista de archivos modificados o agregados
+9.git status
+Quita del HEAD un archivo y le pone el estado de no trabajado
+10.git checkout -- <file>
+Crea un branch en base a uno online
+11.git checkout -b newlocalbranchname origin/branch-name
+Busca los cambios nuevos y actualiza el repositorio
+12. git pull origin <nameBranch>
+Cambiar de branch
+13.git checkout <nameBranch/tagname>
+Une el branch actual con el especificado
+14.git merge <nameBranch>
+Verifica cambios en el repositorio online con el local
+15.git fetch
+Borrar un archivo del repositorio
+git rm <archivo> 
