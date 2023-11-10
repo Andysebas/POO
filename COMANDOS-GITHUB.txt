@@ -1,1 +1,23 @@
-123
+Git:
+
+1. git init: Inicia un nuevo repositorio Git.
+2. git clone: Clona un repositorio existente.
+3. git add: Añade cambios al área de preparación.
+4. git commit: Registra los cambios en el repositorio.
+5. git status: Muestra el estado de los archivos en el directorio de trabajo.
+6. git log: Muestra el historial de commits.
+7. git branch: Lista, crea o elimina ramas.
+8. git merge: Combina cambios de diferentes ramas.
+9. git pull: Obtiene cambios desde un repositorio remoto.
+10. git push: Envía cambios a un repositorio remoto.
+
+GitHub:
+
+1. git remote: Muestra los repositorios remotos configurados.
+2. git fork: Crea una copia personal de un repositorio en tu cuenta de GitHub.
+3. git pull request: Solicita que tus cambios sean fusionados en un repositorio.
+4. git clone (URL del repositorio en GitHub): Clona un repositorio desde GitHub.
+5. git push origin: Sube tus cambios a tu repositorio en GitHub.
+6. git fetch: Obtiene cambios del repositorio remoto sin fusionarlos.
+7. git branch -d: Elimina una rama local después de fusionar los cambios.
+8. git remote add: Conecta tu repositorio local a un repositorio remoto.
