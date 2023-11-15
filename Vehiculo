@@ -1,0 +1,28 @@
+/**
+ * vehiculo
+ */
+public class vehiculo {
+
+    String marca;
+    int velocidad;
+    String placa;
+
+    public vehiculo(String marca, int velocidad, String placa) {
+        this.marca = marca;
+        this.velocidad = velocidad;
+        this.placa = placa;
+    }
+
+    public void Velocidad() {
+        if (velocidad > 50) {
+            System.out.println("Multa al vehiculo " + marca + " con placa: " + placa + " por exceso de velocidad");
+        } else {
+            System.out.println("El vehiculo " + marca + " recorre a una velocidad adecuada.");
+        }
+    }
+
+    public static void main(String[] args) {
+        vehiculo porche1 = new vehiculo("lamborghini aventador", 300, "LBN1963");
+        porche1.Velocidad();
+    }
+}
