@@ -1,0 +1,29 @@
+/**
+ * Persona
+ */
+public class Persona {
+
+    String nombre;//atributo
+    int edad;//atributo
+
+    // constructor
+    public Persona(String nombre, int edad){
+        this.nombre=nombre;
+        this.edad=edad;
+    }
+    //metodo
+    public void saltar(){
+        System.out.println(this.nombre +" Empezo a saltar");
+    }
+    public void comer(){
+        System.out.println(this.nombre +" Empezo a comer");
+    }
+    public void escribir(){
+        System.out.println(this.nombre +"Empezo a escribir");
+    }
+    public static void main(String[] args) {
+        Persona p1 =new Persona("Andy",19);//instancia=dar vida
+        p1.comer();
+        p1.saltar();
+    }
+}
