@@ -1,0 +1,34 @@
+/**
+ * Perro
+ */
+public class Perro {
+
+    String nombre;
+    String raza;
+    int edad;
+
+    public Perro(String nombre, String raza, int edad) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.edad = edad;
+    }
+
+    public void ladrar() {
+        System.out.println(this.nombre + " Empezo a ladrar");
+    }
+
+    public void comer() {
+        System.out.println(this.nombre + " Empezo a comer");
+    }
+
+    public void jugar() {
+        System.out.println(this.nombre + " Empezo a jugar");
+    }
+
+    public static void main(String[] args) {
+        Perro perro1 = new Perro("Sasy", "beagle", 6);
+        perro1.ladrar();
+        perro1.comer();
+        perro1.jugar();
+    }
+}
