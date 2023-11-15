@@ -1,0 +1,34 @@
+/**
+ * Gato
+ */
+public class Gato {
+
+    String nombre;
+    String raza;
+    int edad;
+
+    public Gato(String nombre, String raza, int edad) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.edad = edad;
+    }
+
+    public void maullar() {
+        System.out.println(this.nombre + " Empezo a maullar");
+    }
+
+    public void arañar() {
+        System.out.println(this.nombre + " Empezo a arañar");
+    }
+
+    public void jugar() {
+        System.out.println(this.nombre + " Empezo a jugar");
+    }
+
+    public static void main(String[] args) {
+        Gato gato1 = new Gato("Kira", "scottish fold", 7);
+        gato1.maullar();
+        gato1.arañar();
+        gato1.jugar();
+    }
+}
