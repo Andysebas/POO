@@ -1,0 +1,25 @@
+
+
+public class Division {
+
+    public static double dividir(double numerador, double denominador) throws ArithmeticException {
+        if (denominador == 0) {
+            throw new ArithmeticException("¡Error! No se puede dividir por cero.");
+        }
+        return numerador / denominador;
+    }
+
+    public static void main(String[] args) {
+        double numerador = 10.0;
+        double denominador = 0.0;
+
+        try {
+            double resultado = dividir(numerador, denominador);
+            System.out.println("El resultado de la división es: " + resultado);
+        } catch (ArithmeticException e) {
+            System.out.println("Se ha producido un error: " + e.getMessage());
+        }
+    }
+}
+
+En este ejemplo, la clase Division tiene un método dividir() que intenta realizar una operación de división. Si el denominador es igual a cero, se lanza una excepción ArithmeticException con un mensaje indicando que no se puede dividir por cero.
