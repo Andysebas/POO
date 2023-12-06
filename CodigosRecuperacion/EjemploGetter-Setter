@@ -1,0 +1,41 @@
+Ejemplo 2: Método Getter y setter
+
+public class Persona {
+    private String nombre;
+    private int edad;
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    // Getter para obtener la edad
+    public int getEdad() {
+        return edad;
+    }
+
+    // Setter para establecer la edad
+    public void setEdad(int nuevaEdad) {
+        if (nuevaEdad > 0) {
+            edad = nuevaEdad;
+        } else {
+            System.out.println("La edad debe ser un número positivo.");
+        }
+    }
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+    }
+
+    public static void main(String[] args) {
+        Persona persona1 = new Persona("Ejemplo", 30);
+        
+        // Usando el getter para obtener la edad
+        System.out.println("Edad actual: " + persona1.getEdad());
+
+        // Usando el setter para cambiar la edad
+        persona1.setEdad(35);
+        persona1.mostrarInformacion();
+    }
+}
