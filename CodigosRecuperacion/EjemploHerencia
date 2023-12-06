@@ -1,0 +1,36 @@
+Ejemplo 1: Crear una clase Empleado que herede de Persona
+
+
+public class Persona {
+    private String nombre;
+    private int edad;
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+    }
+}
+
+public class Empleado extends Persona {
+    private double salario;
+
+    public Empleado(String nombre, int edad, double salario) {
+        super(nombre, edad);
+        this.salario = salario;
+    }
+
+    public void mostrarInformacionEmpleado() {
+        super.mostrarInformacion();
+        System.out.println("Salario: " + salario);
+    }
+
+    public static void main(String[] args) {
+        Empleado empleado1 = new Empleado("Pedro", 25, 2500.0);
+        empleado1.mostrarInformacionEmpleado();
+    }
+}
