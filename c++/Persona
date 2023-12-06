@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+class Persona {
+private:
+    string nombre; // Atributo
+    int edad; // Atributo
+
+public:
+    // Constructor
+    Persona(string nombre, int edad) {
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+
+    // Métodos
+    void saltar() {
+        cout << this->nombre << " Empezó a saltar" << endl;
+    }
+
+    void comer() {
+        cout << this->nombre << " Empezó a comer" << endl;
+    }
+
+    void escribir() {
+        cout << this->nombre << " Empezó a escribir" << endl;
+    }
+};
+
+int main() {
+    Persona p1("Andy", 19); // Instancia = dar vida
+    p1.comer();
+    p1.saltar();
+
+    return 0;
+}
