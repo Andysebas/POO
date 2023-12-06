@@ -1,0 +1,57 @@
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+double calcular(string number1, string operador, string number2) {
+    double num1, num2;
+    istringstream(number1) >> num1;
+    istringstream(number2) >> num2;
+
+    if (operador == "+") {
+        return num1 + num2;
+    } else if (operador == "-") {
+        return num1 - num2;
+    } else if (operador == "*") {
+        return num1 * num2;
+    } else if (operador == "/") {
+        if (num2 == 0) {
+            throw runtime_error("División por cero");
+        }
+        return num1 / num2;
+    } else {
+        throw invalid_argument("Operador no válido: " + operador);
+    }
+}
+
+int main() {
+    string number1, operador, number2;
+
+    while (true) {
+        try {
+            cout << "\n----CALCULADORA ANDY----\n";
+            cout << "Ingrese primer número (Escribe 'salir' para terminar): ";
+            getline(cin, number1);
+
+            if (number1 == "salir") {
+                break;
+            }
+
+            cout << "Ingrese el operador [+,-,*,/] : ";
+            cin >> operador;
+            cin.ignore();
+
+            cout << "Ingrese segundo número: ";
+            getline(cin, number2);
+
+            double resultado = calcular(number1, operador, number2);
+            cout << "Resultado de la operación es: " << resultado << endl;
+
+        } catch (const exception &ex) {
+            cout << "Error: " << ex.what() << endl;
+        }
+    }
+
+    cout << "Saliendo de la calculadora....." << endl;
+
+    return 0;
+}
