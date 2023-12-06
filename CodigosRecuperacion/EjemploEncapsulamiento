@@ -1,0 +1,42 @@
+Ejemplo de Encapsulamiento
+
+public class Persona {
+    private String nombre;
+    private int edad;
+
+    // Métodos para establecer y obtener el nombre
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    // Métodos para establecer y obtener la edad
+    public void setEdad(int edad) {
+        if (edad > 0) {
+            this.edad = edad;
+        } else {
+            System.out.println("La edad debe ser un número positivo.");
+        }
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+}
+
+public class EjemploEncapsulamiento {
+    public static void main(String[] args) {
+        Persona persona = new Persona();
+
+        // Estableciendo el nombre y la edad utilizando los métodos setter
+        persona.setNombre("Juan");
+        persona.setEdad(30);
+
+        // Obteniendo el nombre y la edad utilizando los métodos getter
+        System.out.println("Nombre: " + persona.getNombre());
+        System.out.println("Edad: " + persona.getEdad());
+    }
+}
