@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Vehiculo {
+private:
+    string marca;
+    int velocidad;
+    string placa;
+
+public:
+    // Constructor
+    Vehiculo(string marca, int velocidad, string placa) {
+        this->marca = marca;
+        this->velocidad = velocidad;
+        this->placa = placa;
+    }
+
+    // Método para verificar la velocidad
+    void Velocidad() {
+        if (velocidad > 50) {
+            cout << "Multa al vehiculo " << marca << " con placa: " << placa << " por exceso de velocidad" << endl;
+        } else {
+            cout << "El vehiculo " << marca << " recorre a una velocidad adecuada." << endl;
+        }
+    }
+};
+
+int main() {
+    Vehiculo porche1("lamborghini aventador", 300, "LBN1963");
+    porche1.Velocidad();
+
+    return 0;
+}
