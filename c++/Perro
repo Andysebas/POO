@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Perro {
+private:
+    string nombre;
+    string raza;
+    int edad;
+
+public:
+    // Constructor
+    Perro(string nombre, string raza, int edad) {
+        this->nombre = nombre;
+        this->raza = raza;
+        this->edad = edad;
+    }
+
+    // Métodos
+    void ladrar() {
+        cout << this->nombre << " Empezó a ladrar" << endl;
+    }
+
+    void comer() {
+        cout << this->nombre << " Empezó a comer" << endl;
+    }
+
+    void jugar() {
+        cout << this->nombre << " Empezó a jugar" << endl;
+    }
+};
+
+int main() {
+    Perro perro1("Sasy", "beagle", 6);
+    perro1.ladrar();
+    perro1.comer();
+    perro1.jugar();
+
+    return 0;
+}
