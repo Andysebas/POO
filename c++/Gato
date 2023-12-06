@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Gato {
+private:
+    string nombre;
+    string raza;
+    int edad;
+
+public:
+    // Constructor
+    Gato(string nombre, string raza, int edad) {
+        this->nombre = nombre;
+        this->raza = raza;
+        this->edad = edad;
+    }
+
+    // Métodos
+    void maullar() {
+        cout << this->nombre << " Empezó a maullar" << endl;
+    }
+
+    void arañar() {
+        cout << this->nombre << " Empezó a arañar" << endl;
+    }
+
+    void jugar() {
+        cout << this->nombre << " Empezó a jugar" << endl;
+    }
+};
+
+int main() {
+    Gato gato1("Kira", "scottish fold", 7);
+    gato1.maullar();
+    gato1.arañar();
+    gato1.jugar();
+
+    return 0;
+}
