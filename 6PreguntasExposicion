@@ -1,0 +1,19 @@
+1. ¿Que es iterar?
+Iterar es el proceso de repetir un conjunto de instrucciones un determinado n�mero de veces o hasta que se cumpla una condici�n espec�fica. En programaci�n, la iteraci�n se logra mediante bucles, como el bucle "for" o "while", que permiten ejecutar un bloque de c�digo varias veces.
+
+2. �Para qu� sirve iterar?
+Iter es una funci�n en muchos lenguajes de programaci�n que devuelve un objeto iterador, el cual puede ser utilizado para recorrer elementos en una estructura de datos iterable, como una lista o un diccionario.
+
+3. �Para qu� sirve un arreglo?
+En el contexto de la programaci�n orientada a objetos, un arreglo (o lista, dependiendo del lenguaje) es una estructura de datos que permite almacenar una colecci�n ordenada de elementos del mismo tipo. Sirve para organizar y manipular conjuntos de datos de manera eficiente, proporcionando acceso r�pido a elementos individuales mediante �ndices.
+
+4. �Para qu� sirve un diccionario en POO?
+En programaci�n orientada a objetos (POO), un diccionario (o mapa, dependiendo del lenguaje) es una estructura de datos que asocia claves con valores. Sirve para representar relaciones uno a uno entre objetos. Los diccionarios son �tiles para almacenar y recuperar informaci�n de manera eficiente mediante el uso de claves, en lugar de �ndices num�ricos.
+
+5. �Cu�l es m�s r�pido, un arreglo o un diccionario, y por qu�?
+La velocidad de acceso a los elementos depende del contexto y de la operaci�n que est�s realizando. Los arreglos (listas) generalmente tienen un acceso m�s r�pido si sabes el �ndice del elemento que deseas, ya que acceder a un elemento por �ndice tiene complejidad O(1). Los diccionarios, por otro lado, ofrecen acceso r�pido cuando se utiliza una clave, tambi�n con complejidad O(1). Sin embargo, los diccionarios pueden ser m�s lentos en algunas operaciones, como iterar sobre todos los elementos, debido a la estructura de mapeo clave-valor.
+
+6. �Cu�ndo deber�a usar un diccionario y una lista en POO?
+
+Utiliza una lista cuando necesites una secuencia ordenada de elementos y el acceso por posici�n es esencial.
+Utiliza un diccionario cuando necesites asociar claves con valores y realizar b�squedas r�pidas basadas en esas claves. Los diccionarios son �tiles cuando la estructura de datos se basa en relaciones clave-valor.
