@@ -1,0 +1,33 @@
+public class Libro {
+    
+    String titulo;
+    String autor;
+    private int anio_publicacion;
+
+    public Libro(String titulo, String autor, int anio_publicacion) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anio_publicacion = anio_publicacion;
+    }
+
+    public int getAnio_publicacion() {
+        return anio_publicacion;
+    }
+
+    public void setAnio_publicacion(int anio_publicacion) {
+        this.anio_publicacion = anio_publicacion;
+    }
+
+    //metodos
+    public double calcular_Edad(){
+        double calcular_Edad;
+        calcular_Edad = 2023-(anio_publicacion);
+        return calcular_Edad;
+    }
+    
+    public void mostrar_info(){
+        System.out.println("El titulo del libro es : "+this.titulo);
+        System.out.println("El autor del libro es: "+this.autor);
+        System.out.println("La edad del libro es: "+getAnio_publicacion());
+    }
+}
