@@ -1,0 +1,9 @@
+Nombre: Andy
+Edad: 19
+Estatura: 1.69
+Nacionalidad: Ecuador
+
+Nombre: Amy
+Edad: 18
+Estatura: 1.60
+Nacionalidad: Colombia
