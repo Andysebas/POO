@@ -1,0 +1,28 @@
+package conjunta;
+
+/**
+ *
+ * @author Julio Eduardo
+ */
+public class LibroNoFiccion extends Libro{
+    private String tema;
+
+   public LibroNoFiccion(String titulo, String autor, int anioPublicacion, String tema) {
+        super(titulo, autor, anioPublicacion);
+        this.tema = tema;
+    }
+
+    public String getTema() {
+        return tema;
+    }
+
+    public void setTema(String tema) {
+        this.tema = tema;
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("El tema del libro es: " + tema);
+    }
+}
