@@ -1,0 +1,25 @@
+ DIFERENCIA ENTRE FOR Y FOR EACH
+
+En Java, la diferencia principal entre for y for-each radica en su uso y sintaxis. El bucle for se utiliza cuando conoces el número exacto de iteraciones, mientras que el bucle for-each se utiliza para recorrer colecciones de elementos sin preocuparse por el índice.
+
+Ejemplo de bucle for:
+
+java
+for (int i = 0; i < 5; i++) {
+    System.out.println("Iteración " + i);
+}
+
+
+Este bucle ejecuta el bloque de código cinco veces, imprimiendo "Iteración 0" hasta "Iteración 4".
+
+Ejemplo de bucle for-each con un array:
+
+java
+int[] numeros = {1, 2, 3, 4, 5};
+
+for (int numero : numeros) {
+    System.out.println("Número: " + numero);
+}
+
+Este bucle for-each recorre cada elemento del array numeros sin necesidad de un índice explícito, imprimiendo "Número: 1", "Número: 2", etc.
+En resumen, utiliza for cuando necesitas controlar el índice y el número de iteraciones, y for-each cuando solo necesitas recorrer los elementos de una colección sin preocuparte por el índice.
