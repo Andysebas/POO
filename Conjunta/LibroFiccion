@@ -1,0 +1,29 @@
+package conjunta;
+
+/**
+ *
+ * @author Julio Eduardo
+ */
+public class LibroFiccion extends Libro{
+    
+    private String genero;
+
+    public LibroFiccion(String titulo, String autor, int anioPublicacion, String genero) {
+        super(titulo, autor, anioPublicacion);
+        this.genero = genero;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("El género del libro es: " + genero);
+    }
+}
