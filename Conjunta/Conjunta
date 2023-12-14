@@ -1,0 +1,73 @@
+package conjunta;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Julio 
+ */
+public class Conjunta {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        LibroFiccion libroFiccion = ingresarLibroFiccion(scanner);
+        LibroNoFiccion libroNoFiccion = ingresarLibroNoFiccion(scanner);
+
+        System.out.println("\nInformación del libro de ficción:");
+        libroFiccion.mostrarInfo();
+        System.out.println("La edad del libro de ficción es: " + libroFiccion.calcular_Edad());
+
+        System.out.println("\nInformación del libro no ficticio:");
+        libroNoFiccion.mostrarInfo();
+        System.out.println("La edad del libro no ficticio es: " + libroNoFiccion.calcular_Edad());
+    }
+
+    private static LibroFiccion ingresarLibroFiccion(Scanner scanner) {
+        System.out.println("Ingrese información para un libro de ficción:");
+        System.out.print("Título: ");
+        String tituloFiccion = scanner.nextLine();
+        System.out.print("Autor: ");
+        String autorFiccion = scanner.nextLine();
+        int anioFiccion = ingresarAnioPublicacion(scanner);
+        System.out.print("Género: ");
+        String generoFiccion = scanner.nextLine();
+
+        return new LibroFiccion(tituloFiccion, autorFiccion, anioFiccion, generoFiccion);
+    }
+
+    private static LibroNoFiccion ingresarLibroNoFiccion(Scanner scanner) {
+        System.out.println("\nIngrese información para un libro no ficticio:");
+        System.out.print("Título: ");
+        String tituloNoFiccion = scanner.nextLine();
+        System.out.print("Autor: ");
+        String autorNoFiccion = scanner.nextLine();
+        int anioNoFiccion = ingresarAnioPublicacion(scanner);
+        System.out.print("Tema: ");
+        String temaNoFiccion = scanner.nextLine();
+
+        return new LibroNoFiccion(tituloNoFiccion, autorNoFiccion, anioNoFiccion, temaNoFiccion);
+    }
+
+    private static int ingresarAnioPublicacion(Scanner scanner) {
+        int anioPublicacion = 0;
+        while (true) {
+            try {
+                System.out.print("Año de Publicación: ");
+                anioPublicacion = Integer.parseInt(scanner.nextLine());
+                if (anioPublicacion > 0) {
+                    break;
+                } else {
+                    System.out.println("Ingrese un año válido (mayor que cero).");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Ingrese un año válido (número entero).");
+            }
+        }
+        return anioPublicacion;
+    }
+    
+}
